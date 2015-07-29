@@ -1,0 +1,18 @@
+# Get the prebuilt list of APNs
+$(call inherit-product, vendor/omni/config/gsm.mk)
+
+# Release name
+PRODUCT_RELEASE_NAME := __DEVICE__
+
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
+
+# Inherit device configuration
+$(call inherit-product, device/__MANUFACTURER__/__DEVICE__/device.mk)
+
+## Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := __DEVICE__
+PRODUCT_NAME := omni___DEVICE__
+PRODUCT_BRAND := __MANUFACTURER__
+PRODUCT_MODEL := __DEVICE__
+PRODUCT_MANUFACTURER := __MANUFACTURER__
