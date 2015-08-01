@@ -19,4 +19,5 @@ TARGET_OTA_ASSERT_DEVICE := __DEVICE__
 
 
 PRODUCT_COPY_FILES += \
-     $(LOCAL_PATH)/kernel:kernel
+     $(LOCAL_PATH)/kernel:kernel \
+     $(LOCAL_PATH)/dt.img:dt.img \

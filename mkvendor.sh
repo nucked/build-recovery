@@ -76,7 +76,7 @@ then
     export SEDCMD="s#__CMDLINE__#$CMDLINE#g"
     echo $SEDCMD > $TMPDIR/sedcommand
     cp $TMPDIR/$BOOTIMAGEFILE-zImage $DEVICE_DIR/kernel
-    cp $TMPDIR/$BOOTIMAGEFILE-dt $DEVICE_DIR/dtb
+    cp $TMPDIR/$BOOTIMAGEFILE-dt $DEVICE_DIR/dt.img
     popd > /dev/null
 else
     mkdir -p $DEVICE_DIR
